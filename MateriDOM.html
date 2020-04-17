@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 15px;
+        }
+        
+        body {
+            margin: 50px;
+            font-family: sans-serif;
+        }
+        
+        img {
+            width: 240px;
+            height: 160px;
+            display: block;
+            margin: auto;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        #myDiv1,
+        #myDiv2 {
+            background-color: coral;
+            padding: 10px;
+        }
+        
+        #myP1,
+        #myP2 {
+            background-color: white;
+            font-size: 15px;
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="gambar.jpg">
+    <h2 id="judul">Judul</h2>
+
+    <p class="kutipan"> Dikutip dari
+        <a id="link" href="https://id.wikipedia.org/wiki/Document_Object_Model">Wikipedia</a> Document Object Model (DOM) adalah object model standar untuk HTML dan XML yang bersifat platform independent. Sebuah web browser tidak harus menggunakan DOM
+        untuk menampilkan dokumen HTML. Namun DOM diperlukan oleh JavaScript yang akan mengubah tampilan sebuah website secara dinamis. Dengan kata lain, DOM adalah cara JavaScript melihat suatu halaman HTML.
+    </p>
+    <p class="p2"> Paragraf 2</p>
+    <p class="p3"> Paragraf 3</p>
+    <hr>
+    <p>Pada DOM, semua elemen HTML merupakan objek. <br> Programing Interface dari DOM yaitu :</p>
+    <ul>
+        <li>Properti </li>
+        <li>Method : aksi yang dapat dilakukan </li>
+    </ul>
+
+    <hr>
+
+    <h4>Form</h4>
+    <form>
+        <label>Masukkan nama :  </label>
+        <input type="text" id="nama">
+        <br>
+        <input class="tombolReset" type="button" onclick="reset()" value="RESET">
+    </form>
+    <p class="event">Event propagation mendefinisikan urutan elemen mana yang akan dieksekusi terlebih dahulu. Jika menggunakan bubbling maka elemen yang dieksekusi pertama adalah elemen yang terdalam lalu elemen diluarnya. Untuk cara capturing maka yang akan dieksekusi
+        adalah elemen terluarnya.</p>
+    <div id="myDiv1">
+        <h3>Bubbling:</h3>
+        <p id="myP1">Click me!</p>
+    </div>
+    <br>
+    <div id="myDiv2">
+        <h3>Capturing:</h3>
+        <p id="myP2">Click me!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
